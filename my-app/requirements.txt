@@ -1,0 +1,4 @@
+Flask==3.0.3
+mediapipe==0.10.8
+opencv_contrib_python==4.8.1.78
+opencv_python==4.9.0.80
