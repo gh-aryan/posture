@@ -2,6 +2,7 @@ import cv2
 from flask import Flask, render_template, Response, url_for
 from posture import sitting_posture_estimation
 
+
 app = Flask(__name__)
 
 running  = False
@@ -38,6 +39,9 @@ def start():
     running = True
     return 'script started'
 
+def create_app():
+    return app
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     from waitress import serve
+#     serve(app, host="0.0.0.0", port=5000)
